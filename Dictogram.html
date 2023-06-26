@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="pictures/Dictogram Logo1.png">
+  <!-- <link rel="stylesheet" href="Dictogram2.css"> -->
+  <link rel="stylesheet" href="Dictogram.css">
+  <!-- <link rel="stylesheet" href="Dictogram3.css"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Dictogram</title>
+</head>
+<body>
+  <div id="navbar">
+    <button title="bar1" class="menu-bars" id="show-menu">
+        <i class="fas fa-bars"></i>
+    </button>
+    <div id="title"><h1>Dictogram</h1></div>
+  <div class="dictoLog"><img src="pictures/Design Logo7.gif" alt="Logo"></div>
+    <div class="hidden">
+        <button id="search-button" class="hidden">Search</button>
+    </div>
+    <div id="search-container">
+        <input type="text" placeholder="Enter word here" id="search-input"> <i class='bx bx-search' ></i>
+      </div>
+</div>
+<nav id="nav-menu">
+    <ul class="nav-menu-items">
+        <div id="navbar-toggle">
+          <button title="collapse menu" class="menu-bars" id="hide-menu">
+            <i class="fas fa-bars" id="nav-menu-bar"></i>
+          </button>
+          <span>
+            <h2>Dictogram</h2>
+          </span>
+        </div>
+        <hr/>
+        <div class="nav-section">
+            <li class="nav-text"><a href="#"><i class="fas fa-home nav-icon"></i> Home</a></li>
+            <li class="nav-text"><a href="#"><i class="fas fa-gamepad nav-icon"></i>Spelling Bee</a></li>
+            <li class="nav-text"><a href="#language-devices"><i class="fas fa-pen nav-icon"></i>Language Devices</a></li>
+            <li class="nav-text"><a href="#"><i class="fas fa-book nav-icon"></i>Grammar Techniques</a></li>
+        </div>
+        <hr/>
+        <br>
+        <div class="nav-section">
+            <li class="nav-text"><a href="#"><i class="fas fa-snowboarding nav-icon"></i>Vocab Ninja</a></li>
+            <li class="nav-text"><a href="#"><i class="fas fa-binoculars nav-icon"></i>Reading Techniques</a></li>
+            <li class="nav-text"><a href="#"><i class="fas fa-diagnoses nav-icon"></i>Text Structure</a></li>
+            <li class="nav-text"><a href="#"><i class="fas fa-headphones nav-icon"></i>Story Mode</a></li>
+            <li class="nav-text"><a href="#"><i class="fas fa-paper-plane nav-icon"></i>Practice Question</a></li>
+        </div>
+    </ul>
+</nav>
+<section>
+        <div id="video-container">
+            <video id="display" controls></video>
+            <button id="cancel-button">X</button>
+        </div>
+        <div id='word-meaning'></div>
+</section>
+<section>
+    <div>
+      <div id="player"></div>
+    </div>
+  </section>
+  <br>
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <img src="pictures/Angel.jfif" alt="">
+      </div>
+      <div class="item">
+        <img src="pictures/Bad.jfif" alt="">
+      </div>
+      <div class="item">
+        <img src="pictures/Charmed.jfif" alt="">
+      </div>
+      <div class="item">
+        <img src="pictures/Flies.jfif" alt="">
+      </div>
+      <div class="item">
+        <img src="pictures/Gullivers.jfif" alt="">
+      </div>
+      <div class="item">
+        <img src="pictures/Harry.jfif" alt="">
+      </div>
+      <div class="item">
+        <img src="pictures/Treasure.jfif" alt="">
+      </div>
+      <div class="item">
+        <img src="pictures/Rings.jfif" alt="">
+      </div>
+      <div class="item">
+        <img src="pictures/Lightfall.jfif" alt="">
+      </div>
+      <div class="item">
+        <img src="pictures/Grace.jfif" alt="">
+      </div>
+      <div class="item">
+        <img src="pictures/Fairy.jfif" alt="">
+      </div>
+      <div class="item">
+        <img src="pictures/Alice.jfif" alt="">
+      </div>
+    </div>
+    <section class="descriptive" id="language-devices">
+    <div>
+      <h1 class="header1"> LANGUAGE DEVICES </h1>
+    </div>
+    <br>
+    <article class="article">
+      <div class="scrollspy-container">
+        <ul class="scrollspy-items">
+          <li><a href="#simile">Simile</a></li>
+          <li><a href="#metaphor">Metaphor</a></li>
+          <li><a href="#personification">Personification</a></li>
+          <li><a href="#alliteration">Alliteration</a></li>
+          <li><a href="#assonance">Assonance</a></li>
+          <li><a href="#direct">Direct Address</a></li>
+          <li><a href="#rule">Rule of Three</a></li>
+          <li><a href="#emotive">Emotive Language</a></li>
+          <li><a href="#hyperbole">Hyperbole</a></li>
+          <li><a href="#pathetic">Pathetic Fallacy</a></li>
+        </ul>
+        
+        <div class="scrollspy-content">
+          <div id="simile">
+            <h1>SIMILE</h1>
+            <p class="justify">Simile is a figure of speech that involves comparing two things using the words "like" or "as." It is used as a descriptive device to create a visual effect by drawing a comparison between the two elements. By employing similes, writers can evoke vivid imagery and enhance the reader's understanding and sensory experience.
+
+            <p> For instance, consider the sentence "The man walks like a ghost." <button id="button" onclick="pdfSelector('pdfdocs/simile.pdf')"> continue </button>
+            </p>
+        </div>
+          <br>
+          <div id="metaphor">
+            <h1>METAPHOR</h1>
+            <p>Metaphor, like simile, is a powerful figure of speech used to draw comparisons and create vivid imagery. However, unlike simile, metaphor does not use the words "like" or "as" to establish the comparison. Instead, it directly equates one thing to another, suggesting a shared essence or quality. Metaphors can evoke strong emotions, challenge perceptions, and offer fresh insights.</p>
+            <p> For instance, consider the sentence "Life is a journey." <button id="button" onclick="pdfSelector('pdfdocs/simile.pdf')"> continue </button>
+            </p>
+          </div>
+          <br>
+          <div id="personification">
+            <h1>PERSONIFICATION</h1>
+            <p>Personification, another powerful figure of speech, breathes life into inanimate objects or abstract concepts by attributing human qualities and actions to them. It bestows upon them the ability to think, feel, and engage in human-like behaviors. Personification adds depth and relatability to writing, as it allows readers to connect with the non-human entities on a more personal level.</p>
+            <p> For instance, imagine a scene where "The stars danced in the night sky." <button id="button" onclick="pdfSelector('pdfdocs/simile.pdf')"> continue </button>
+            </p>
+          </div>
+          <br>
+          <div id="alliteration">
+            <h1>ALLITERATION</h1>
+          <p>Alliteration, a captivating literary device, adds rhythm, musicality, and emphasis to written and spoken language. It involves the repetition of consonant sounds at the beginning of neighboring words or syllables, creating a pleasing and memorable effect. Alliteration not only adds flair to the text but also enhances its aesthetic appeal and engages the reader's auditory senses.</p>
+          <p> For instance, consider the sentence "Peter Piper picked a peck of pickled peppers." <button id="button" onclick="pdfSelector('pdfdocs/simile.pdf')"> continue </button>
+          </p>
+        </div>
+        <br>      
+        <div id="assonance">
+          <h1>ASSONANCE</h1>
+        <p>Assonance, a captivating literary technique, adds musicality and a melodic quality to written and spoken language. It involves the repetition of vowel sounds within neighboring words, creating a harmonious and rhythmic effect. Assonance, similar to alliteration, enhances the auditory experience of the reader and adds a memorable quality to the text.</p>
+        <p> For instance, consider the sentence "Peter Piper picked a peck of pickled peppers." <button id="button" onclick="pdfSelector('pdfdocs/simile.pdf')"> continue </button>
+        </p>
+      </div>
+      
+      <br>      
+      <div id="direct">
+        <h1>DIRECT ADDRESS</h1>
+      <p>Direct address is a compelling rhetorical device that involves directly addressing a specific person, group, or entity within a written or spoken text. It adds a sense of immediacy, personal connection, and engagement with the intended audience. Direct address brings the reader or listener into the conversation, making them feel directly involved in the message being conveyed.</p>
+      <p> For instance, consider the sentence "My dear friends, let me share a story with you." <button id="button" onclick="pdfSelector('pdfdocs/simile.pdf')"> continue </button>
+      </p>
+    </div>      
+    <br>
+    <div id="rule">
+      <h1>RULE OF THREE</h1>
+    <p>The rule of three is a persuasive writing technique that involves grouping ideas or items in sets of three. This technique is based on the principle that people tend to remember and find things more satisfying when presented in threes. The rule of three adds rhythm, emphasis, and memorability to a statement or argument.</p>
+    <p> For example, in a persuasive speech advocating for environmental conservation, a speaker might say, "Reduce, reuse, recycle."  <button id="button" onclick="pdfSelector('pdfdocs/simile.pdf')"> continue </button>
+    </p>
+  </div>      
+  <br>
+  <div id="emotive">
+    <h1>EMOTIVE LANGUAGE</h1>
+  <p>Emotive Language is a powerful tool in communication that aims to evoke strong emotions and create a deep emotional impact on the audience. It involves the use of words, phrases, and imagery that trigger specific feelings, attitudes, and reactions in the reader or listener. Emotive language adds depth, intensity, and persuasion to writing and speech, allowing for a more compelling and memorable experience.</p>
+  <p> For example, "The heart-wrenching scene brought tears to my eyes..."<button id="button" onclick="pdfSelector('pdfdocs/simile.pdf')"> continue </button>
+</div>    
+<div id="hyperbole">
+  <h1>HYPERBOLE</h1>
+<p>Emotive Language is a powerful tool in communication that aims to evoke strong emotions and create a deep emotional impact on the audience. It involves the use of words, phrases, and imagery that trigger specific feelings, attitudes, and reactions in the reader or listener. Emotive language adds depth, intensity, and persuasion to writing and speech, allowing for a more compelling and memorable experience.</p>
+<p> For example, "The lady would work a million hours a day only to get a chicken feed." <button id="button" onclick="pdfSelector('pdfdocs/simile.pdf')"> continue </button>
+</div>    
+<div id="pathetic">
+  <h1>PATHETIC FALLACY</h1>
+<p>Pathetic Fallacy Pathetic fallacy is a literary device where human emotions, characteristics, or behaviors are attributed to inanimate objects, nature, or animals. It is a form of personification that gives human-like qualities to non-human entities. Pathetic fallacy is often used to create a specific mood, enhance the atmosphere, or reflect the emotional state of characters in a narrative. </p>
+<p>Here are a few examples of sentences that employ pathetic fallacy...<button id="button" onclick="pdfSelector('pdfdocs/simile.pdf')"> continue </button></p>
+</div>    
+    </article>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="Dictogram.js"></script>
+  <script src="Dictogram2.js"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    autoplay: true,
+    autoplayTimeout:5000,
+    stagePadding:50,
+    margin: 15,
+    nav:false,
+    dots: false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+  </script>
+  
+  
+  
+  <script>
+// var videoIdMap;
+// var player;
+
+// // hide player by default
+// document.getElementById('player').style.display = 'none';
+
+// function loadVideo() {
+//   // hide player
+//   document.getElementById('player').style.display = 'none';
+
+//   const searchInput = document.getElementById("search-input");
+//   const videoId = videoIdMap[searchInput.value.toLowerCase().trim()];
+
+//   if (videoId) {
+//     // show player
+//     document.getElementById('player').style.display = 'block';
+
+//     if (player) {
+//       player.stopVideo();
+//       player.destroy();
+//     }
+
+//     player = new YT.Player('player', {
+//       videoId: videoId,
+//       playerVars: {
+//         autoplay: 0,
+//         controls: 1,
+//         showinfo: 0
+//       },
+//       events: {
+//         'onReady': onPlayerReady,
+//         'onStateChange': onPlayerStateChange
+//       }
+//     });
+//   }
+// }
+
+// function onPlayerReady(event) {
+//   event.target.playVideo();
+// }
+
+// function onPlayerStateChange(event) {
+//     if (event.data == YT.PlayerState.ENDED || event.data == YT.PlayerState.PAUSED || event.data == YT.PlayerState.STOPPED) {
+//         event.target.stopVideo();
+//         document.getElementById('player').style.display = 'none';
+//         window.parent.postMessage('stopAudio', 'http://127.0.0.1:5500');
+//     }
+// }
+
+
+// // add event listener to search input
+// searchInput = document.getElementById('search-input');
+// if (searchInput) {
+//   searchInput.addEventListener('keyup', (event) => {
+//     if (event.keyCode === 13) {
+//       // hide player
+//       document.getElementById('player').style.display = 'none';
+
+//       fetch('videos.json')
+//         .then(response => response.json())
+//         .then(data => {
+//           videoIdMap = {};
+//           data.forEach(item => {
+//             videoIdMap[item.name] = item.videoID;
+//             item.keywords.forEach(keyword => {
+//               videoIdMap[keyword] = item.videoID;
+//             });
+//           });
+
+//           // Load video with the value of the input field
+//           const videoId = videoIdMap[searchInput.value.toLowerCase().trim()];
+//           loadVideo(videoId);
+//         })
+//         .catch(error => {
+//           console.error('Error fetching video map data:', error);
+//         });
+//     }
+//   });
+// }
+
+  </script>
+<!-- Code injected by live-server -->
+<!-- <script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script> -->
+</body>
+</html>

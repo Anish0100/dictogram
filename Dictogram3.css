@@ -1,0 +1,14 @@
+#down p {
+    position: relative;
+    z-index: -1;
+    left: 200px;
+    top: 3050px;
+  }
+nav{
+    position: fixed;
+    border: solid 2px white;
+    width: 91%;
+    height: 10%;
+    top: 1px;   
+    z-index: 2;
+}

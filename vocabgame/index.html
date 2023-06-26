@@ -1,0 +1,27 @@
+<!-- game.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Vocabulary Game</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+  </head>
+  <body>
+    <h1>Vocabulary Game</h1>
+    <div id="question-container">
+      <p id="word">{{ word }}</p>
+      <div id="options">
+        <button class="option">{{ options[0] }}</button>
+        <button class="option">{{ options[1] }}</button>
+        <button class="option">{{ options[2] }}</button>
+        <button class="option">{{ options[3] }}</button>
+      </div>
+      <p id="feedback"></p>
+    </div>
+    <div id="score-container">
+      <p>Score: <span id="score">0</span></p>
+      <button id="restart">Restart Game</button>
+    </div>
+  </body>
+</html>

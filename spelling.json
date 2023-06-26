@@ -1,0 +1,230 @@
+{
+  "words": [
+    {
+      "audioSource": "audio/barrenness.mp3",
+      "meaning": "incapable of producing offspring",
+      "wordclass": "noun",
+      "Etymology": "Middle English bareine, from Anglo-French barain, perhaps of Celtic origin; akin to Middle Welsh brynar fallow land",
+      "answer":"barrenness"
+    },
+    {
+      "audioSource": "audio/belligerent.mp3",
+      "meaning": "waging war",
+      "wordclass": "adjective",
+      "Etymology": "Latin",
+      "answer":"belligerent"
+    },
+    {
+      "audioSource": "audio/cogent.mp3",
+      "meaning": "appealing forcibly to the mind or reason: convincing",
+      "wordclass": "adjective",
+      "Etymology": "Latin",
+      "answer":"cogent"
+    },
+    {
+      "audioSource": "audio/drunkenness.mp3",
+      "meaning": "given to habitual excessive use of alcohol",
+      "wordclass": "noun",
+      "Etymology": "Middle English",
+      "answer":"drunkenness"
+    },
+    {
+      "audioSource": "audio/ecstasy.mp3",
+      "meaning": "a state of being beyond reason and self-control",
+      "wordclass": "noun",
+      "Etymology": "Middle English, Latin, Greek",
+      "answer":"ecstasy"
+    },
+    {
+      "audioSource": "audio/fluctuate.mp3",
+      "meaning": "to shift back and forth uncertainly",
+      "wordclass": "verb",
+      "Etymology": "Latin",
+      "answer":"fluctuate"
+    },
+    {
+      "audioSource": "audio/gnome.mp3",
+      "meaning": "an ageless and often deformed dwarf of folklore who lives in the earth and usually guards treasure",
+      "wordclass": "noun",
+      "Etymology": "Greek",
+      "answer":"gnome"
+    },
+    {
+      "audioSource": "audio/grievous.mp3",
+      "meaning": "causing or characterized by severe pain, suffering, or sorrow",
+      "wordclass": "adjective",
+      "Etymology": "Middle English",
+      "answer":"grievous"
+    },
+    {
+      "audioSource": "audio/guile.mp3",
+      "meaning": "deceitful cunning",
+      "wordclass": "Noun",
+      "Etymology": "Middle English",
+      "answer":"guile"
+    },
+    {
+      "audioSource": "audio/machiavellian.mp3",
+      "meaning": "Of or relating to ******velli",
+      "wordclass": "adjective",
+      "Etymology": "Eponym",
+      "answer":"machiavellian"
+
+    },
+    {
+      "audioSource": "audio/schism.mp3",
+      "meaning": "a formal division in or separation from a church or religious body",
+      "wordclass": "noun",
+      "Etymology": "Middle English, Latin, Greek",
+      "answer":"schism"
+    },
+    {
+      "audioSource": "audio/superintendent.mp3",
+      "meaning": "A person who is authorized to supervise, direct or administer.",
+      "wordclass": "noun",
+      "Etymology": "Latin",
+      "answer":"superintendent"
+    },
+    {
+      "audioSource": "audio/supersede.mp3",
+      "meaning": "to take the position or place of",
+      "wordclass": "verb",
+      "Etymology": "Middle English, Latin",
+      "answer":"supersede"
+    },
+    {
+      "audioSource": "audio/sieve.mp3",
+      "meaning": "a utensil for sifting or straining",
+      "wordclass": "noun",
+      "Etymology": "Middle English, Old English",
+      "answer": "sieve"
+      },
+      {
+      "audioSource": "audio/levee.mp3",
+      "meaning": "a bank built to prevent the overflow of a river",
+      "wordclass": "noun",
+      "Etymology": "French",
+      "answer": "levee"
+      },
+      {
+      "audioSource": "audio/levy.mp3",
+      "meaning": "to impose or collect a tax or fee",
+      "wordclass": "verb",
+      "Etymology": "Medieval Latin, Old French",
+      "answer": "levy"
+      },
+      {
+      "audioSource": "audio/marshmallow.mp3",
+      "meaning": "a soft, spongy candy often toasted over a fire",
+      "wordclass": "noun",
+      "Etymology": "unknown",
+      "answer": "marshmallow"
+      },
+      {
+      "audioSource": "audio/junior.mp3",
+      "meaning": "a younger person or a lower-ranking position",
+      "wordclass": "adjective/noun",
+      "Etymology": "Latin",
+      "answer": "junior"
+      },
+      {
+      "audioSource": "audio/senior.mp3",
+      "meaning": "an older person or a higher-ranking position",
+      "wordclass": "adjective/noun",
+      "Etymology": "Latin",
+      "answer": "senior"
+      },
+      {
+      "audioSource": "audio/rhythm.mp3",
+      "meaning": "a pattern of beats or sounds in music",
+      "wordclass": "noun",
+      "Etymology": "Greek",
+      "answer": "rhythm"
+      },
+      {
+      "audioSource": "audio/sincerely.mp3",
+      "meaning": "with genuine honesty and earnestness",
+      "wordclass": "adverb",
+      "Etymology": "Middle English, Old French, Latin",
+      "answer": "sincerely"
+      },
+      {
+      "audioSource": "audio/interesting.mp3",
+      "meaning": "capturing one's attention or curiosity",
+      "wordclass": "adjective",
+      "Etymology": "Latin",
+      "answer": "interesting"
+      },
+      {
+      "audioSource": "audio/collapse.mp3",
+      "meaning": "to fall down or give way suddenly",
+      "wordclass": "verb",
+      "Etymology": "Latin",
+      "answer": "collapse"
+      },
+      {
+      "audioSource": "audio/hoax.mp3",
+      "meaning": "a humorous or malicious deception",
+      "wordclass": "noun",
+      "Etymology": "unknown",
+      "answer": "hoax"
+      },
+      {
+        "audioSource": "audio/severe.mp3",
+        "meaning": "very harsh or intense",
+        "wordclass": "adjective",
+        "Etymology": "Latin",
+        "answer": "severe"
+        },
+        {
+        "audioSource": "audio/gnash.mp3",
+        "meaning": "to grind or strike one's teeth together",
+        "wordclass": "verb",
+        "Etymology": "Middle English, Old English",
+        "answer": "gnash"
+        },
+        {
+        "audioSource": "audio/knave.mp3",
+        "meaning": "a dishonest or unscrupulous man",
+        "wordclass": "noun",
+        "Etymology": "Middle English, Old English",
+        "answer": "knave"
+        },
+        {
+        "audioSource": "audio/cemetery.mp3",
+        "meaning": "a place where dead people are buried",
+        "wordclass": "noun",
+        "Etymology": "Greek",
+        "answer": "cemetery"
+        },
+        {
+        "audioSource": "audio/symmetry.mp3",
+        "meaning": "the quality of being made up of exactly similar parts facing each other or around an axis",
+        "wordclass": "noun",
+        "Etymology": "Greek",
+        "answer": "symmetry"
+        },
+        {
+        "audioSource": "audio/dysentery.mp3",
+        "meaning": "an infection of the intestines causing diarrhea with blood",
+        "wordclass": "noun",
+        "Etymology": "Greek",
+        "answer": "dysentery"
+        },
+        {
+        "audioSource": "audio/stationary.mp3",
+        "meaning": "not moving, fixed in one place",
+        "wordclass": "adjective",
+        "Etymology": "Latin",
+        "answer": "stationary"
+        },
+        {
+        "audioSource": "audio/stationery.mp3",
+        "meaning": "writing materials such as paper, envelopes, and pens",
+        "wordclass": "noun",
+        "Etymology": "Latin",
+        "answer": "stationery"
+        }
+ 
+  ]
+}

@@ -1,0 +1,739 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+  background: url(firefly.jpg) no-repeat  center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-baackground-size: cover;
+  background-size: cover;
+  background-color: rgba(0,0,0,100);
+  overflow-x: hidden;
+
+}
+
+hr{
+  background-color: #ca0d0d;
+  height: 1px;
+  border: none;
+}
+#navbar{
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  top: 0%;
+  left: 0%;
+  opacity: 0.8;
+  margin-top: 0px;
+  z-index: 10000;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255,255,255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.menu-bars{
+  margin-left: 2rem;
+  font-size: 2rem;
+  color: #fff;
+}
+
+#nav-menu{
+  width: 260px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 850ms;
+  opacity: 0.8;
+  z-index: 10000;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255,255,255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+#nav-menu.active{
+  left: 0;
+  transition: 350ms;
+}
+.nav-text{
+  display: flex;
+  justify-content: start;
+  list-style: none;
+  height: 50px;
+  padding: 1rem;
+}
+
+.nav-text a{
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 1rem;
+  margin-right: 0%;
+  padding-left: 1%;
+  list-style: none;
+}
+
+.nav-text:hover{
+  transform: scale(1.08);
+  cursor: pointer;
+  transition-delay: 0s;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255,255,255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid yellow;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  text-decoration: none;
+  width: 95%;
+}
+
+
+.nav-menu-items{
+  width: 100%;
+}
+
+.nav-icon{
+padding-right: 1rem;
+color: rgb(206, 176, 99);
+}
+
+
+#navbar-toggle{
+  width: 96%;
+  height: 50px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  transform: scale(1.08);
+  cursor: pointer;
+  transition-delay: 0s;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255,255,255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid yellow;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+#navbar-toggle h1{
+  color: #fff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+#navbar-toggle a{
+  text-decoration: none;
+
+}
+
+.fa-bars {
+  color: #fff;
+  float: left;
+  text-decoration: none;
+  position: fixed;
+  top: 5%;
+  cursor: pointer;
+}
+.nav-section{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px;
+}
+span{
+  margin: 15%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  color: white;
+}
+/* img{
+  float: left;
+  width: 50px;
+  height: 50px;
+} */
+#title{
+  color: white;
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+  position: fixed;
+  left: 6%;
+  top: 5%;
+}
+.dictoLog{
+  display: flex;
+  position: fixed;
+  left: 23%;
+  top: 4%;
+  width: 50%;
+  height: 50px;
+  /* transform: translateX(-100%); */
+}
+
+#nav-menu-bar{
+  top: 10%;
+  left: 15%;
+}
+/* #vidContainer{
+  border: 1px solid black;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 5px;
+  z-index: -1;
+  width: 80%;
+  height: 350px;
+  margin-left: 10%;
+  border-radius: 15px;
+  background-color: #212121;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5) inset;
+ }  */
+ #search-input {
+  width: 45%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  font-size: 16px;
+  position: fixed;
+  left: 29%;
+  top: 10px;
+}
+
+#search-input:focus {
+  outline: none;
+  border: 2px solid #f16565;
+}
+#search-button{
+  position: fixed;
+  visibility: hidden;
+}
+#video-container {
+  position: sticky;
+  width: 98%;
+  height: 70% !important;
+  margin-top: 100px;
+  top: 5%;
+  left: 1%;
+  border-radius: 10px;
+  opacity: 0.9;
+  z-index: 2;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255,255,255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+#cancel-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 5px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#word-meaning{
+  position: absolute;
+  padding: 15px;
+  top: 35%;
+  left: 80%;
+  width: 18%;
+  height: 200px;
+  font-size: large;
+  color: white;
+  bottom: 70%;
+  opacity: 0.8;
+  box-shadow: 0px 0px 20px #f16565;
+  transition: transform 0.3s ease-in-out;
+  z-index: 3;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255,255,255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+#word-meaning:hover{
+  background-color: #000;
+  color: #fff;
+  transform: rotate(2deg) translateX(2px);
+}
+
+#display {
+  width: 100%;
+  height: 400px;
+  z-index: 10000;
+}
+
+.owl-carousel {
+  position: inherit; 
+  top: 550px;  
+  width: 80%; 
+  max-width: 1200px; 
+  border-bottom: 1px solid #f16565;
+  border-top: 1px solid #f16565;
+  box-shadow: 0px 0px 20px #f16565;
+}
+
+.item img{
+  width: 200px;
+  height: 300px;
+  cursor: pointer;
+  margin: 20px;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0px 0px 10px #ffff00;
+}
+.item img:hover {
+  transform: scale(1.08);
+}
+.header1{
+  font-size: 3rem;
+  color: gold;
+}
+.descriptive {
+  font-family: 'Pangolin', cursive;
+  color: #fff;
+  position: relative;
+  width: 90%;
+  margin: 5%;
+  padding: 5%;
+  top: 530px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255,255,255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.scrollspy-container {
+  display: flex;
+}
+
+.scrollspy-items {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 50%; 
+  padding: 10px;
+  list-style: none;
+  height: 360px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255,255,255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+ul li a{
+  text-decoration: none;
+  color: wheat;
+  display: flex;
+  justify-content: start;
+  list-style: none;
+  height: 10%;
+  padding: 3%;
+}
+
+.scrollspy-content {
+  position: relative;
+  margin-left: 5px; 
+  width: 120%;
+  padding: 1%;
+  height: 320px;
+  overflow-y:hidden;
+  top: 20px;
+  color: white;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255,255,255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+
+ .scrollspy-items li:hover{
+  transform: scale(1.08);
+  cursor: pointer;
+  transition-delay: 0s;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255,255,255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid yellow;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.scrollspy-content h1,
+.scrollspy-content p {
+  margin: 25px;
+  height: 30%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+ .scrollspy-content, p {
+  font-size: 20px;
+}  
+
+#button {
+  width: 25%;
+  border-radius: 15px;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1rem;
+  padding: 5px;
+  margin: 1%;
+  border: 2px solid #f16565;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* .article {
+  column-count: 2; 
+  column-gap: 20px; 
+} */
+
+/* .clear {
+  clear: both;
+} */
+/* 
+p {
+  border: 1px solid black;
+  margin: 5px;
+  padding: 1%;
+  break-inside: avoid; 
+} */
+/* 
+@media screen and (max-width: 1000px){
+  body{
+    background-color: rgb(159, 140, 186);
+  }
+  #navbar{
+      position: fixed;
+      width: 88%;
+      height: 100px;
+      left: 0%;
+ 
+    }
+
+  .dictoLog{
+      left: 27%;
+      top: 15%;
+      width: 50%;
+      height: 50px;
+    }
+
+    #search-input {
+      width: 45%;
+      height: 60%;
+      left: 32%;
+      top: 10px;
+    }
+    #title{
+      font-size: 25px;
+      left: 6%;
+      top: 12%;
+    }
+    .fa-bars{
+      top: 22px;
+      position: fixed;
+    }
+    #video-container {
+      position: absolute;
+      width: 86%;
+      height: 50%;
+      top: 5%;
+    }
+    #word-meaning{
+      top: 27%;
+      left: 68%;
+      width: 18%;
+      height: 200px;
+      font-size: large;
+      color: white;
+      bottom: 70%;
+    }
+    #nav-menu{
+      width: 460px;
+      height: 100vh; 
+    }
+
+    .nav-text a{
+      font-size: 25px;
+    }
+    
+    #navbar-toggle{
+      width: 96%;
+      height: 100px;     
+    }
+    
+    #nav-menu-bar{
+      top: 20%;
+      left: 10%;
+    }
+    span{
+      margin: 15%;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 31px;
+      color: white;
+      position: fixed;
+      left: 26px;
+      top: -50px;
+    }
+    .owl-carousel {
+      position: inherit; 
+      top: 550px;  
+      width: 100%; 
+      max-width: 1350px; 
+      left: 5px;
+    }
+    .descriptive {
+      font-family: 'Pangolin', cursive;
+      color: #fff;
+      position: relative;
+      width: 75%;
+      margin: 5%;
+      padding: 5%;
+      top: 530px;
+    }
+
+} */
+
+@media screen and (min-width: 100px) and (max-width:1000px){
+  body{
+    background-color: rgb(159, 140, 186);
+    overflow-x: hidden;
+  }
+  #navbar{
+      position: fixed;
+      width: 50%;
+      height: 50px;
+      left: 0%;
+ 
+    }
+
+  .dictoLog{
+    left: 35%;
+      top: 16%;
+      width: 20%;
+      height: 30px;
+      position: fixed;
+      /* left: calc(10% + 200px); */
+    }
+
+    #search-input {
+      width: 45%;
+      height: 60%;
+      left: 45%;
+      top: 10px;
+    }
+    #title{
+      font-size: 10px;
+      left: 7%;
+      top: 20%;
+    }
+    .fa-bars{
+      top: 10px;
+      position: fixed;
+      font-size: 20px;
+      left: 5px;
+    }
+    #video-container {
+      position: absolute;
+      width: 99%;
+      height: 55%;
+      top: -8%;
+    }
+    #display {
+      width: 100%;
+      height: 280px;
+      z-index: 10000;
+    }
+
+    #word-meaning{
+      top: 67%;
+      left: 1%;
+      width: 98%;
+      height: 150px;
+      font-size: 10px;
+      color: white;
+      bottom: 70%;
+    }
+    #nav-menu{
+      width: 200px;
+      height: 100vh; 
+    }
+
+    .nav-text a{
+      font-size: 10px;
+    }
+    
+    #navbar-toggle{
+      width: 95%;
+      height: 50px;     
+    }
+    
+    #nav-menu-bar{
+      top: 20%;
+      left: 10%;
+    }
+    span{
+      margin: 15%;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 10px;
+      color: white;
+      position: fixed;
+      left: 26px;
+      top: -50px;
+    }
+    .owl-carousel {
+      position: inherit; 
+      top: 500px;  
+      width: 100%; 
+      max-width: 1350px; 
+      left: 5px;
+    }
+    
+  .item img{
+      width: 150px;
+      height: 150px;
+      cursor: pointer;
+    }
+    .item img:hover {
+      transform: scale(1.08);
+    }
+    
+    .descriptive {
+      font-family: 'Pangolin', cursive;
+      color: #fff;
+      position: relative;
+      width: 200%;
+      height: 10%;
+      margin: 5%;
+      padding: 5%;
+      top: 530px;
+    }
+    
+    .scrollspy-items {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      float: left;
+      justify-content: space-between;
+      align-items: center;
+      top: 0;
+      left: 0;
+      width: 100%; 
+      padding: 10px;
+      list-style: none;
+      height: 300px;
+      
+    }
+    
+    ul li a{
+      text-decoration: none;
+      color: wheat;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+      height: 10%;
+      padding: 3%;
+    }
+    
+    .scrollspy-content {
+      position: sticky;
+      margin-top: 45%; 
+      width: 120%;
+      padding: 1%;
+      height: 300px;
+      overflow-y:hidden;
+      bottom: 13px;
+      color: white;
+      
+    }
+    
+    
+     .scrollspy-items li:hover{
+      transform: scale(1.08);
+      cursor: pointer;
+      transition-delay: 0s;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255,255,255, 0));
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 20px;
+      border: 1px solid yellow;
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    }
+    
+    .scrollspy-content h1,
+    .scrollspy-content p {
+      margin: 25px;
+      height: 30%;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    
+     .scrollspy-content, p {
+      font-size: 20px;
+    }  
+    
+    #button {
+      width: 25%;
+      border-radius: 15px;
+      cursor: pointer;
+      animation: pulse 2s infinite;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 1rem;
+      padding: 5px;
+      margin: 1%;
+      border: 2px solid #f16565;
+    }
+    
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+    
+ 
+}

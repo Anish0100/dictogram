@@ -1,0 +1,115 @@
+{
+    "words": [
+      {
+        "word": "BELLIGERENT",
+        "definition": "Hostile and aggressive",
+        "options": [
+          "A. Angry",
+          "B. Stupid",
+          "C. Aggressive",
+          "D. Worrisome"
+        ],
+        "answer": "C"
+      },
+      {
+        "word": "MELLIFLUOUS",
+        "definition": "Sweet-sounding; smooth and soothing",
+        "options": [
+          "A. Loud",
+          "B. Harsh",
+          "C. Sweet-sounding",
+          "D. High-pitched"
+        ],
+        "answer": "C"
+      },
+      {
+        "word": "OSTENTATIOUS",
+        "definition": "Intended to attract notice and impress others",
+        "options": [
+          "A. Humble",
+          "B. Obvious",
+          "C. Impressive",
+          "D. Outrageous"
+        ],
+        "answer": "C"
+      },
+      {
+        "word": "PARSIMONIOUS",
+        "definition": "Unwilling to spend money or use resources; stingy or frugal",
+        "options": [
+          "A. Generous",
+          "B. Stingy",
+          "C. Careless",
+          "D. Selfish"
+        ],
+        "answer": "B"
+      },
+      {
+        "word": "PROLIFIC",
+        "definition": "Producing many works, results, or offspring",
+        "options": [
+          "A. Lazy",
+          "B. Unproductive",
+          "C. Fruitful",
+          "D. Boring"
+        ],
+        "answer": "C"
+      },
+      {
+        "word": "QUERULOUS",
+        "definition": "Complaining in a petulant or whining manner",
+        "options": [
+          "A. Whining",
+          "B. Polite",
+          "C. Happy",
+          "D. Complimentary"
+        ],
+        "answer": "A"
+      },
+      {
+        "word": "REDOLENT",
+        "definition": "Having a strong pleasant odor",
+        "options": [
+          "A. Fragrant",
+          "B. Stinky",
+          "C. Rotten",
+          "D. Neutral"
+        ],
+        "answer": "A"
+      },
+      {
+        "word": "SANGUINE",
+        "definition": "Optimistic or positive, especially in an apparently bad or difficult situation",
+        "options": [
+          "A. Optimistic",
+          "B. Pessimistic",
+          "C. Negative",
+          "D. Hopeless"
+        ],
+        "answer": "A"
+      },
+      {
+        "word": "TACITURN",
+        "definition": "Reserved or uncommunicative in speech; saying little",
+        "options": [
+          "A. Talkative",
+          "B. Reserved",
+          "C. Silent",
+          "D. Quiet"
+        ],
+        "answer": "B"
+      },
+      {
+        "word": "UBIQUITOUS",
+        "definition": "Present, appearing, or found everywhere",
+        "options": [
+          "A. Rare",
+          "B. Uncommon",
+          "C. Everywhere",
+          "D. Exotic"
+        ],
+        "answer": "C"
+      }
+    ]
+  }
+  

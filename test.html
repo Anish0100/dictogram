@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        /* https://www.youtube.com/shorts/gLnYIIbn93s */
+    </style>
+</head>
+<body>
+    <input type="text" id="search-input" placeholder="Search video name...">
+    <button onclick="loadVideo()">Load Video</button>
+    <div id="player"></div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script>
+var videoIdMap = {
+    "jotter": "Ncm72uOnijo",
+    "video2": "gLnYIIbn93s",
+    "video3": "M7lc1UVf-VE"
+};
+var player;
+
+function loadVideo() {
+    const searchInput = document.getElementById("search-input");
+    const videoId = videoIdMap[searchInput.value.toLowerCase().trim()];
+
+    if (videoId) {
+        if (player) {
+            player.stopVideo();
+        }
+        player = new YT.Player('player', {
+            videoId: videoId,
+            playerVars: {
+                autoplay: 0,
+                controls: 1,
+                showinfo: 0
+            },
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+    } else {
+        alert("Video not found!");
+    }
+}
+
+function onPlayerReady(event) {
+    event.target.playVideo();
+}
+
+function onPlayerStateChange(event) {
+    if (event.data == YT.PlayerState.ENDED) {
+        event.target.stopVideo();
+    }
+}
+
+searchInput = document.getElementById("search-input");
+searchInput.addEventListener('keyup', (event) => {
+  if (event.keyCode === 13) {
+    // Load video with the value of the input field
+    videoId = searchInput.value;
+    loadVideo();
+  }
+});
+
+    </script>
+</body>
+</html>

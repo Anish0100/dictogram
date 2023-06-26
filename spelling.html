@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spelling Quiz</title>
+    <link rel="stylesheet" href="spelling.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <button id="start-btn">Start Quiz</button>
+    <div id="container">
+      <div class="item">
+        <img title="Earn 950-1000 points!" src="awards/first3.png" alt="Firstposition">
+        <p>Earn 950-1000 points</p>
+      </div>
+      <div class="item">
+        <img src="awards/first1.png" title="Earn 850-900 points!" alt="secondposition">
+        <p>Earn 850-900 points</p>
+      </div>
+      <div class="item">
+        <img src="awards/third.png" title="Earn 750-800 points" alt="thirdposition">
+        <p>Earn 750-800 points</p>
+      </div>
+    </div>
+    
+    <div id="info-box" class="hidden">
+      <h2>Rules of the Quiz</h2>
+      <ul>
+        <li>You have 10 rounds</li> 
+        <li>You will have 15 seconds per question.</li>
+        <li>You must spell the words given correctly.</li>
+        <li>Once you submit your answer, it cannot be changed.</li>
+        <li>Press 'enter' to load the next audio.</li>
+      </ul>
+      <button id="start-quiz-btn">Proceed</button>
+      <button id="exit">Exit</button>
+    </div>
+    
+    <div id="quiz-box">
+      <div id="audio-box" class="audiobox">
+        <audio id="audio" controls></audio>
+      </div>
+      <div id="answer-box">
+        <input type="text" id="answer-input" placeholder="Type spelling here">    
+        <button id="next-btn" >Next</button>
+      </div>
+      <div id="displayAnswer"></div>
+      <div id="timer">15</div>
+    </div>
+    <div id="result-box" class="hidden">
+      <canvas id="canvas"></canvas>
+      <div id="score"></div> 
+      <img id="first" src="awards/first2.png">
+      <img id="second" src="awards/first1.png">
+      <img id="third" src="awards/third.png">
+      <img id="loser" src="awards/loser.png">
+      <div class="button-container">
+        <button id="replay-btn">Replay</button>
+        <button id="quit-btn">Quit</button>
+        <button id="spell-check">Review</button>
+      </div>
+      <div id="suggestion-box">
+        <!-- <div class="close-btn" title="close">X</div> -->
+      </div>
+    </div>
+    <div>
+    <i class="bx bxs-x-circle" id="icon"></i>
+  </div>
+  
+    <script src="confetti.min.js"></script>
+    <script type="text/javascript" src="spelling.js"></script>
+  </body>
+</html>

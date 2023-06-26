@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+ background: url('pictures/bee.jpeg') no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-baackground-size: cover;
+ background-size: cover;
+ background-color: rgba(0,0,0,100);
+ box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5) inset;
+}
+img{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,100);
+    
+}
+.content{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.content h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: white;
+    font-family: sans-serif;
+}
+.content h2 span{
+    color: #0077b6;
+}
+.content p{
+    font-size: 20px;
+    font-style: italic;
+    color: white;
+    opacity: 0.8;
+}  
+
+a{
+    position: fixed;
+    background: #fff;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size:1.5em;
+    letter-spacing:0.1em;
+    font-weight:400;
+    padding: 10px 30px;
+    transition: 0.5s;
+    width: 100px;
+    display: flex;
+    left: 44%;
+    top: 59%;
+    border-radius: 25px;
+
+}
+a:hover{
+    background: var(--clr);
+    color: var(--clr);
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 35px var(--clr);
+}
+a:before{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #080808;
+    border-radius: 25px;
+}
+a span{
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    justify-content: center;
+}
+
+a i{
+    position: absolute;
+    inset:0;
+    display:block;
+}
+    
+a i::before{
+    content:'';
+    position: absolute;
+    top: -3.5px;
+    left: 80%;
+    width: 10px; 
+    height: 4px;
+    background:#27282c;
+    box-shadow: 35px;
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.5s;
+    border: 2px solid var(--clr)
+}
+    
+a:hover i::before{
+    width:20px;
+    left: 20%;
+}
+   
+a i::after{
+    content:'';
+    position: absolute;
+    bottom: -3.5px;
+    left: 20%;
+    width: 10px; 
+    height: 4px;
+    background:#27282c;
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.5s;
+    border: 2px solid var(--clr);
+}
+    
+a:hover i::after{
+    width:20px;
+    left: 80%;
+}
+    
